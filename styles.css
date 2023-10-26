@@ -134,3 +134,25 @@ body {
 .btn-box a:hover::before {
     width: 100%;
 }
+
+.home-sci {
+    position: absolute;
+    bottom: 40px;
+    width: 170px;
+    background: red;
+    justify-content: space-between;
+}
+
+.home-sci a {
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #00abf0;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #00abf0;
+    text-decoration: none;
+}
