@@ -8,6 +8,7 @@
 }
 
 body {
+    
     color: #ededed;
 }
 
@@ -16,7 +17,7 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    padding: 20px 10%;
+    padding: 26px 10%;
     background-color: transparent;
     display: flex;
     justify-content: space-between;
@@ -106,7 +107,7 @@ body {
     color: #00abf0;
 }
 
-.home {
+.Portfolio{
     height: 100vh;
     background: url('img/image.png') no-repeat;
     background-color: #081b29;
@@ -118,23 +119,23 @@ body {
 
 
 
-.home-content {
+.portfolio-content {
     max-width: 600px;
 }
 
-.home-content h1 {
+.portfolio-content h1 {
     font-size: 56px;
     font-weight: 700;
     line-height: 1.2;
 }
 
-.home-content h3 {
+.portfolio-content h3 {
     font-size: 32px;
     font-weight: 700;
     color: #00abf0;
 }
 
-.home-content p {
+.portfolio-content p {
     font-size: 16px;
     margin: 20px 0 40px;
 }
