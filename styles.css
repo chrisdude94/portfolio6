@@ -25,6 +25,38 @@ body {
     z-index: 100;
 }
 
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    z-index: 1;
+    font-family: 'Poppins', sans-serif;
+}
+
+.dropdown-content li {
+    padding: 10px;
+    text-align: center;
+    color: #081b29; /* Set the text color */
+}
+
+/* Change background color when hovering over dropdown links */
+.dropdown-content li:hover {
+    background-color: white;
+    color:#00abf0; /* Set the text color on hover */
+}
+
+/* Show the dropdown content when hovering over the portfolio link */
+.portfolio:hover .dropdown-content {
+    display: block;
+}
+
+/* Prevent "Portfolio" link text from changing color on hover */
+.portfolio a:hover {
+    color: #081b29;
+}
+
+
 .logo {
     position: relative;
     font-size: 25px;
@@ -155,8 +187,8 @@ body {
 
 .home-sci {
     position: absolute;
-    bottom: 40px;
-    width: 170px;
+    bottom: 90px;
+    width: 180px;
     justify-content: space-between;
 }
 
