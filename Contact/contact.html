@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio 6</title>
+    <link rel="stylesheet" href="contact.css">
+    
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    
+    <header class="header">
+        
+    
+        <nav class="navbar">
+            <a href="/home.html" class="home.html">Home</a>
+            <a href="#">About</a>
+            <div class="portfolio">
+                <a href="Portfolio/portfolio.html">Portfolio</a>
+                <ul class="dropdown-content">
+                    <li><a href="#javascript">Javascript</a></li>
+                    <li><a href="#unrealengine">Unreal Engine</a></li>
+                    <li><a href="Cinematography/cinematography.html">Cinematography</a></li>
+                    <li><a href="#music">Music</a></li>
+                </ul>
+            </div>
+            <a href="Active">Contact</a>
+        </nav>
+    </header>
+
+    <section class="home">  
+
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> cjhanssen94@gmail.com</p>
+                    <p><i class="fas fa-phone-square-alt"></i> +47 474 55 990</p>
+                </div>
+            </div>
+            <div class="contact-right"></div>
+            <form name="submit-to-google-sheet">
+                <input type="text" name="Name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email">
+                <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+            <a href="/img/Christer_Hanssen_-_ (1) 2022.pdf" class="btn">Download CV</a>
+
+           <div class="home-sci">
+         
+        </div>
+
+        <span class="home-imgHover"></span>
+    </section>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbx_DjVonCu2m6KnvH5zyKsHUDshOFajhrvz5W3sWIDMkMqPSEdTHNTbarn1b9NN1k4OYA/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message sent"
+                setTimeout(function() {
+                    msg.innerHTML = ""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+</html>

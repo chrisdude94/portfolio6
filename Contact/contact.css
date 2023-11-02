@@ -7,11 +7,8 @@
     font-family: 'Poppins', sans-serif;
 }
 
-
-
 body {
     color: #ededed;
-    overflow-x: hidden;
 }
 
 .header {
@@ -19,7 +16,7 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    padding: 26px 10%;
+    padding: 20px 10%;
     background-color: transparent;
     display: flex;
     justify-content: space-between;
@@ -84,7 +81,8 @@ body {
     color: #ededed;
     text-decoration: none;
     font-weight: 500;
-    margin-left: 35px;
+    margin-left: 1175px;
+    margin-top: 6px;
     transition: .3s;
     display: flex;
     align-items: center; /* Align the links vertically in the header */
@@ -109,45 +107,40 @@ body {
     color: #00abf0;
 }
 
-.Portfolio {
-    height: 300vh; /* You can adjust the height as needed */
-    background: url('/img/bmpcc4k_1.png') no-repeat;
+.home {
+    height: 100vh;
+    background: url('img/image.png') no-repeat;
     background-color: #081b29;
     display: flex;
     align-items: center;
     padding: 0 10%;
-    flex-direction: column; /* Center content vertically */
 }
 
-.wedding {
-    display: flex;
-    margin-top: 500px;
-}
 
-.portfolio-content {
+
+
+.home-content {
     max-width: 600px;
-    margin-top: 20em; /* Adjust the margin-top value to create spacing between the image and content */
-    margin-right: 50em; /* Center content horizontally */
 }
 
-.portfolio-content h1 {
+.home-content h1 {
     font-size: 56px;
     font-weight: 700;
     line-height: 1.2;
 }
 
-.portfolio-content h3 {
+.home-content h3 {
     font-size: 32px;
     font-weight: 700;
     color: #00abf0;
 }
 
-.portfolio-content p {
+.home-content p {
     font-size: 16px;
     margin: 20px 0 40px;
 }
 
-/*.home-content .btn-box {
+.home-content .btn-box {
     display: flex;
     justify-content: space-between;
     width: 345px;
@@ -255,29 +248,76 @@ body {
     transition: .5s;
 }
 
-.home-sci a:hover::before {
-    width: 100%;
-}
 
-.home-imgHover {
-    position: absolute;
-    top: 0;
-    right: 260px;
-    width: 830px;
-    height: 100%;
-    background: transparent;
-    transition: 3s;
-}
-
-/*.home-imgHover:hover {
-    background: #081b29;
-    opacity: .8;
-}
 
 /* KEYFRAMES ANIMATION */
 
-@keyframes showRight {
-    100% {
-        width: 0;
-    }
+
+
+.contact-left {
+    flex-basis: 35%;
 }
+
+.contact-right {
+    flex-basis: 60%
+}
+
+.contact-left p {
+    margin-top: 30px;
+}
+
+.contact-left p i{
+    color: #ff004f;
+    margin-right: 15px;
+    font-size: 25px;
+}
+
+.btn {
+    display: block;
+    margin: 50px;
+    margin-left: 1px;
+    width: fit-content;
+    background-color: #00abf0;
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #fff;
+    transition: background 0.5s;
+}
+
+.btn2 {
+    display: inline-block;
+    background: #00abf0;
+    margin-top: 1px;
+    margin-left: 1px;
+}
+
+.contact-right form {
+    width: 100%;
+}
+
+form input, form textarea {
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #262626;
+    padding: 15px;
+    margin: 15px 0;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 6px;
+}
+
+form btn2 {
+    padding: 14px 60px;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+#msg {
+    color: #61b752;
+    margin-top: -30px;
+    display: block;
+}
+
