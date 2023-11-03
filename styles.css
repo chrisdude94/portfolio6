@@ -12,6 +12,14 @@ body {
     overflow-x: hidden;
 }
 
+
+.home-sci a {
+    width: 2rem; /* Responsive width */
+    height: 2rem; /* Responsive height */
+    font-size: 1.5rem; /* Responsive font size */
+    margin: 1rem; /* Responsive margin */
+}
+
 .header {
     position: fixed;
     top: 0;
@@ -30,16 +38,6 @@ body {
         padding: 20px 5%;
     }
 }
-
-
-
-
-
-
-
-
-
-
 
 .dropdown-content {
     display: none;
@@ -267,18 +265,19 @@ body {
     width: 100%;
 }
 
+
 .home-imgHover {
     position: absolute;
     top: 0;
-    right: 260px;
-    width: 830px;
+    right: 10%; /* Adjust the percentage for responsive positioning */
+    width: 45%; /* Adjust the percentage for responsive width */
     height: 100%;
     background: transparent;
     transition: 3s;
 }
 
 .home-imgHover:hover {
-    background: #081b29;
+    background:#081b29;
     opacity: .8;
 }
 

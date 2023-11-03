@@ -89,7 +89,6 @@ body {
     display: flex;
     align-items: center; /* Align the links vertically in the header */
 }
-
 /* Apply margin-right to create spacing between links */
 .navbar a {
     margin-right: 35px;
