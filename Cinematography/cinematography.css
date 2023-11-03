@@ -281,3 +281,27 @@ body {
         width: 0;
     }
 }
+
+
+  @media (max-width: 768px) {
+    .header {
+      padding: 10px 5%; /* Adjust padding for smaller screens */
+    }
+  
+    .navbar {
+      margin-left: 5px; /* Adjust the position for smaller screens */
+    }
+  
+    .navbar a {
+      margin-right: 15px; /* Adjust the spacing for smaller screens */
+    }
+  
+    .portfolio-content {
+      margin-top: 10em; /* Adjust the margin-top value for smaller screens */
+      margin-right: 20px; /* Center content horizontally for smaller screens */
+    }
+  
+    /* Add more responsive styles as needed */
+  }
+
+  

@@ -39,18 +39,18 @@ body {
     color: #081b29; /* Set the text color */
 }
 
-/* Change background color when hovering over dropdown links */
+
 .dropdown-content li:hover {
     background-color: white;
-    color:#00abf0; /* Set the text color on hover */
+    color:#00abf0; 
 }
 
-/* Show the dropdown content when hovering over the portfolio link */
+
 .portfolio:hover .dropdown-content {
     display: block;
 }
 
-/* Prevent "Portfolio" link text from changing color on hover */
+
 .portfolio a:hover {
     color: #081b29;
 }
@@ -85,16 +85,16 @@ body {
     margin-top: 6px;
     transition: .3s;
     display: flex;
-    align-items: center; /* Align the links vertically in the header */
+    align-items: center; 
 }
 
-/* Apply margin-right to create spacing between links */
+
 .navbar a {
     margin-right: 35px;
 }
 
 .navbar a:last-child {
-    margin-right: 0; /* Remove margin-right for the last link */
+    margin-right: 0; 
 }
 
 .navbar a:hover,
@@ -320,4 +320,5 @@ form btn2 {
     margin-top: -30px;
     display: block;
 }
+
 
