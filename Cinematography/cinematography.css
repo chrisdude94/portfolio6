@@ -17,7 +17,7 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    padding: 26px 10%;
+    padding: 20px 5%; /* Adjust padding for smaller screens */
     background-color: transparent;
     display: flex;
     justify-content: space-between;
@@ -87,6 +87,8 @@ body {
     display: flex;
     align-items: center; /* Align the links vertically in the header */
 }
+
+
 /* Apply margin-right to create spacing between links */
 .navbar a {
     margin-right: 35px;

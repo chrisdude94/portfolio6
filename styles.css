@@ -12,28 +12,56 @@ body {
     overflow-x: hidden;
 }
 
-.carousel-container {
-    display: flex;
+
+@keyframes slide {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%)
+    }
+}
+
+.logos {
     overflow: hidden;
-    width: 5%;
-    margin: 20px auto;
+    padding: 1px 0;
+    position: relative;
 }
 
-.carousel-slide {
-    flex: 0 0 100%;
-    transition: transform 0.5s;
+.logos:before,
+.logos:after{
+    position: absolute;
+    top: 0;
+    width: 250px;
+    height: 25%;
+    content: "";
+    z-index: 2;
 }
 
-.carousel-slide img {
-    width: 100%;
-    height: auto;
+.logos:before {
+    left: 0;
+    background: linear-gradient(to left, transparent, #080808);
 }
 
-.carousel-navigation {
-    display: flex;
-    justify-content: space-between;
-    margin: 10px auto;
-    width: 50px;
+.logos:after {
+    right: 0;
+    background: linear-gradient(to right, transparent, #080808);
+}
+
+.logos:hover .logos-slide{
+    animation-play-state: paused;
+}
+
+.logos-slide {
+    display: inline-block;
+    animation: 15s slide infinite linear;
+}
+
+
+
+.logos-slide img {
+    height: 50px;
+    margin: 0 15px;
 }
 
 
@@ -128,6 +156,12 @@ body {
     align-items: center; /* Align the links vertically in the header */
 }
 
+@media (max-width: 768px) {
+    .navbar {
+        font-size: 14px; /* Adjust the font size for smaller screens */
+    }
+}
+
 /* Apply margin-right to create spacing between links */
 .navbar a {
     margin-right: 35px;
@@ -177,6 +211,7 @@ body {
 .home-content p {
     font-size: 16px;
     margin: 20px 0 40px;
+    max-width: 40em;
 }
 
 .home-content .btn-box {
@@ -249,21 +284,19 @@ body {
 
 .home-sci a {
     display: flex;
-    position: relative;
-    
     justify-content: center;
     align-items: center;
-    width: 40px;
-    height: 40px;
+    width: 40px; /* Set the desired width */
+    height: 40px; /* Set the desired height */
     background: transparent;
     border: 2px solid #ff004f;
     border-radius: 50%;
-    font-size: 20px;
+    font-size: 20px; /* Set the desired font size */
     color: #ff004f;
     text-decoration: none;
     z-index: 1;
     overflow: hidden;
-    transition: .5s;
+    transition: 0.5s;
     margin-right: 25px;
 }
 
